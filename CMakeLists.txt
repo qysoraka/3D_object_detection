@@ -1,2 +1,4 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(opencv_object_tracking)
+
+## Compile as C++11, supported in ROS Kinetic a
