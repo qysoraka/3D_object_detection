@@ -5,4 +5,4 @@ project(opencv_object_tracking)
 # add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
-## if COMPONENTS list like 
+## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS x
