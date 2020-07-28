@@ -6,4 +6,5 @@ project(opencv_object_tracking)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find othe
+## is used, also find other catkin packages
+find_package(ca
