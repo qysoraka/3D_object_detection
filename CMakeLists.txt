@@ -8,4 +8,6 @@ project(opencv_object_tracking)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  message_gene
+  message_generation
+  roscpp
+  std_msg
