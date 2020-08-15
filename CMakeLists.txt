@@ -10,4 +10,7 @@ project(opencv_object_tracking)
 find_package(catkin REQUIRED COMPONENTS
   message_generation
   roscpp
-  std_msg
+  std_msgs
+  geometry_msgs
+  cv_bridge
+ 
