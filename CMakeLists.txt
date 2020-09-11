@@ -17,4 +17,4 @@ find_package(catkin REQUIRED COMPONENTS
 )
 find_package(OpenCV REQUIRED)
 
-## System depende
+## System dependencies are found with CMake's convent
