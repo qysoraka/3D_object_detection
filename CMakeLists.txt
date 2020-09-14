@@ -21,4 +21,5 @@ find_package(OpenCV REQUIRED)
 # find_package(Boost REQUIRED COMPONENTS system)
 
 
-## Uncomment this if the pack
+## Uncomment this if the package has a setup.py. This macro ensures
+## modules
