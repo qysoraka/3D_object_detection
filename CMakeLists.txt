@@ -22,4 +22,4 @@ find_package(OpenCV REQUIRED)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
-## modules
+## modules and global scripts declared
