@@ -23,4 +23,4 @@ find_package(OpenCV REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
-## See http://ros.o
+## See http://ros.org/doc/api/catkin/html/user_guide/setu
