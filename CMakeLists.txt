@@ -27,4 +27,5 @@ find_package(OpenCV REQUIRED)
 # catkin_python_setup()
 
 ################################################
-## Declare ROS messages,
+## Declare ROS messages, services and actions ##
+###########
