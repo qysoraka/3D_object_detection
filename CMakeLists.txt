@@ -28,4 +28,6 @@ find_package(OpenCV REQUIRED)
 
 ################################################
 ## Declare ROS messages, services and actions ##
-##############################################
+################################################
+
+## To declare and build messages,
