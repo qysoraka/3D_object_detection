@@ -31,4 +31,4 @@ find_package(OpenCV REQUIRED)
 ################################################
 
 ## To declare and build messages, services or actions from within this
-#
+## package, follow these s
