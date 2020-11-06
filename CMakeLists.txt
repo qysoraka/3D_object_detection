@@ -31,4 +31,5 @@ find_package(OpenCV REQUIRED)
 ################################################
 
 ## To declare and build messages, services or actions from within this
-## package, follow these s
+## package, follow these steps:
+## * Let MSG_DEP_SET be
