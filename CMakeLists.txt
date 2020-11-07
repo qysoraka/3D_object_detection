@@ -32,4 +32,4 @@ find_package(OpenCV REQUIRED)
 
 ## To declare and build messages, services or actions from within this
 ## package, follow these steps:
-## * Let MSG_DEP_SET be
+## * Let MSG_DEP_SET be the set of packages whose message ty
