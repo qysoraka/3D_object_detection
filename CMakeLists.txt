@@ -33,4 +33,5 @@ find_package(OpenCV REQUIRED)
 ## To declare and build messages, services or actions from within this
 ## package, follow these steps:
 ## * Let MSG_DEP_SET be the set of packages whose message types you use in
-##   your messages/services/actions (e.g. std_msgs, actionli
+##   your messages/services/actions (e.g. std_msgs, actionlib_msgs, ...).
+## * In the file pac
