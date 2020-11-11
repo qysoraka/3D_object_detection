@@ -34,4 +34,5 @@ find_package(OpenCV REQUIRED)
 ## package, follow these steps:
 ## * Let MSG_DEP_SET be the set of packages whose message types you use in
 ##   your messages/services/actions (e.g. std_msgs, actionlib_msgs, ...).
-## * In the file pac
+## * In the file package.xml:
+##   * add a build_depend tag for 
