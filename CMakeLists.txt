@@ -37,4 +37,5 @@ find_package(OpenCV REQUIRED)
 ## * In the file package.xml:
 ##   * add a build_depend tag for "message_generation"
 ##   * add a build_depend and a exec_depend tag for each package in MSG_DEP_SET
-##   * If MSG_DEP_SET isn't empty the following dependency has been pulled 
+##   * If MSG_DEP_SET isn't empty the following dependency has been pulled in
+##     but can be declared 
