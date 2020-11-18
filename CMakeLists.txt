@@ -39,4 +39,5 @@ find_package(OpenCV REQUIRED)
 ##   * add a build_depend and a exec_depend tag for each package in MSG_DEP_SET
 ##   * If MSG_DEP_SET isn't empty the following dependency has been pulled in
 ##     but can be declared for certainty nonetheless:
-##     * add a exec_depend tag for "message_ru
+##     * add a exec_depend tag for "message_runtime"
+## * In this file (CMakeLists.tx
