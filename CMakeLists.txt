@@ -40,4 +40,5 @@ find_package(OpenCV REQUIRED)
 ##   * If MSG_DEP_SET isn't empty the following dependency has been pulled in
 ##     but can be declared for certainty nonetheless:
 ##     * add a exec_depend tag for "message_runtime"
-## * In this file (CMakeLists.tx
+## * In this file (CMakeLists.txt):
+##   * add "message_generation" an
