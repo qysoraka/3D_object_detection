@@ -42,4 +42,5 @@ find_package(OpenCV REQUIRED)
 ##     * add a exec_depend tag for "message_runtime"
 ## * In this file (CMakeLists.txt):
 ##   * add "message_generation" and every package in MSG_DEP_SET to
-##     find_package(catkin REQUIRED COM
+##     find_package(catkin REQUIRED COMPONENTS ...)
+##   * add "message_runtime
