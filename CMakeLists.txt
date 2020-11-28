@@ -46,4 +46,5 @@ find_package(OpenCV REQUIRED)
 ##   * add "message_runtime" and every package in MSG_DEP_SET to
 ##     catkin_package(CATKIN_DEPENDS ...)
 ##   * uncomment the add_*_files sections below as needed
-##     and list every .msg/.srv/.action fi
+##     and list every .msg/.srv/.action file to be processed
+##   * uncomment the g
