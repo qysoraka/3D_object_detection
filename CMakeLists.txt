@@ -47,4 +47,5 @@ find_package(OpenCV REQUIRED)
 ##     catkin_package(CATKIN_DEPENDS ...)
 ##   * uncomment the add_*_files sections below as needed
 ##     and list every .msg/.srv/.action file to be processed
-##   * uncomment the g
+##   * uncomment the generate_messages entry below
+##   
