@@ -48,4 +48,4 @@ find_package(OpenCV REQUIRED)
 ##   * uncomment the add_*_files sections below as needed
 ##     and list every .msg/.srv/.action file to be processed
 ##   * uncomment the generate_messages entry below
-##   
+##   * add every package in MSG_DEP_SET to generate
