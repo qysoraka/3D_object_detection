@@ -53,3 +53,8 @@ find_package(OpenCV REQUIRED)
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
+   position_publish.msg
+#   Message2.msg
+ )
+
+## Genera
