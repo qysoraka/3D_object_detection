@@ -60,4 +60,7 @@ add_message_files(
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES
-#   S
+#   Service1.srv
+#   Service2.srv
+# )
+
