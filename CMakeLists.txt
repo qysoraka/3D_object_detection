@@ -64,3 +64,4 @@ add_message_files(
 #   Service2.srv
 # )
 
+## Generate actions in the 'action' fold
