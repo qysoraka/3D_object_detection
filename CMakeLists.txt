@@ -68,4 +68,7 @@ add_message_files(
 # add_action_files(
 #   FILES
 #   Action1.action
-#   Action2.acti
+#   Action2.action
+# )
+
+## Generate added messages and
