@@ -71,4 +71,6 @@ add_message_files(
 #   Action2.action
 # )
 
-## Generate added messages and services with any dependencies lis
+## Generate added messages and services with any dependencies listed here
+generate_messages(
+   DEPENDENCIE
