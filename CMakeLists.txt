@@ -84,4 +84,4 @@ generate_messages(
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
 
-## To declare and build dyna
+## To declare and build dynamic reconfigure parameters wit
