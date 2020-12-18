@@ -86,4 +86,5 @@ generate_messages(
 
 ## To declare and build dynamic reconfigure parameters within this
 ## package, follow these steps:
-## * 
+## * In the file package.xml:
+##   * add a build
