@@ -88,4 +88,5 @@ generate_messages(
 ## package, follow these steps:
 ## * In the file package.xml:
 ##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
-## * In this file (CMakeLists.tx
+## * In this file (CMakeLists.txt):
+##   * add "dynamic_reconfigure
