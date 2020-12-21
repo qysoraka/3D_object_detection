@@ -89,4 +89,5 @@ generate_messages(
 ## * In the file package.xml:
 ##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
 ## * In this file (CMakeLists.txt):
-##   * add "dynamic_reconfigure
+##   * add "dynamic_reconfigure" to
+##     find_package(catkin REQUIRED COM
