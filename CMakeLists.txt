@@ -90,4 +90,5 @@ generate_messages(
 ##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
 ## * In this file (CMakeLists.txt):
 ##   * add "dynamic_reconfigure" to
-##     find_package(catkin REQUIRED COM
+##     find_package(catkin REQUIRED COMPONENTS ...)
+##   * uncomment the "
