@@ -91,4 +91,5 @@ generate_messages(
 ## * In this file (CMakeLists.txt):
 ##   * add "dynamic_reconfigure" to
 ##     find_package(catkin REQUIRED COMPONENTS ...)
-##   * uncomment the "generate_dynamic_reconfigure_optio
+##   * uncomment the "generate_dynamic_reconfigure_options" section below
+##     and list ev
