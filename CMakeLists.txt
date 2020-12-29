@@ -94,4 +94,4 @@ generate_messages(
 ##   * uncomment the "generate_dynamic_reconfigure_options" section below
 ##     and list every .cfg file to be processed
 
-## Gen
+## Generate dynamic reconfigure parameters 
