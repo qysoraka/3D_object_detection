@@ -101,4 +101,5 @@ generate_messages(
 # )
 
 ###################################
-## catkin specific c
+## catkin specific configuration ##
+##########################
