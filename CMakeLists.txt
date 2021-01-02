@@ -100,4 +100,5 @@ generate_messages(
 #   cfg/DynReconf2.cfg
 # )
 
-##################################
+###################################
+## catkin specific c
