@@ -102,4 +102,5 @@ generate_messages(
 
 ###################################
 ## catkin specific configuration ##
-##########################
+###################################
+## The catkin_package macro ge
