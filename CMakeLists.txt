@@ -103,4 +103,4 @@ generate_messages(
 ###################################
 ## catkin specific configuration ##
 ###################################
-## The catkin_package macro ge
+## The catkin_package macro generates cmake config files for your p
