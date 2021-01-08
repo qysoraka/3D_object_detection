@@ -104,4 +104,4 @@ generate_messages(
 ## catkin specific configuration ##
 ###################################
 ## The catkin_package macro generates cmake config files for your package
-## Declare thin
+## Declare things to be passed to depende
