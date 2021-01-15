@@ -106,4 +106,4 @@ generate_messages(
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
 ## INCLUDE_DIRS: uncomment this if your package contains header files
-## LIBRARIES: libraries you crea
+## LIBRARIES: libraries you create in this project that dependent pr
