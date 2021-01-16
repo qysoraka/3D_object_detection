@@ -107,4 +107,4 @@ generate_messages(
 ## Declare things to be passed to dependent projects
 ## INCLUDE_DIRS: uncomment this if your package contains header files
 ## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPEND
+## CATKIN_DEPENDS: catkin_packages dependent pr
