@@ -108,4 +108,4 @@ generate_messages(
 ## INCLUDE_DIRS: uncomment this if your package contains header files
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system de
+## DEPENDS: system dependencies of this project th
