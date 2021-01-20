@@ -111,4 +111,5 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRA
+#  LIBRARIES opencv_object_tracking
+  CAT
