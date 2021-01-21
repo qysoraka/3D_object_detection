@@ -112,4 +112,4 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES opencv_object_tracking
-  CAT
+  CATKIN_DEPENDS message_generation 
