@@ -112,4 +112,4 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES opencv_object_tracking
-  CATKIN_DEPENDS message_generation 
+  CATKIN_DEPENDS message_generation roscpp std_msgs geometry_ms
