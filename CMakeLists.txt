@@ -120,4 +120,5 @@ catkin_package(
 ## Build ##
 ###########
 
-## Specify additional locations of
+## Specify additional locations of header files
+## Your package
