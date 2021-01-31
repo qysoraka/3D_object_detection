@@ -127,4 +127,5 @@ include_directories(
   ${OpenCV_INCLUDE_DIRS}
 )
 
-## Dec
+## Declare a C++ library
+# add_library
