@@ -129,4 +129,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_N
+#   src/${PROJECT_NAME}/opencv_object_tracking.cpp
+# )
+
+## 
