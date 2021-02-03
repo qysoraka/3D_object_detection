@@ -132,4 +132,5 @@ include_directories(
 #   src/${PROJECT_NAME}/opencv_object_tracking.cpp
 # )
 
-## Add cmake target dependencies of the 
+## Add cmake target dependencies of the library
+## as an example, code may ne
