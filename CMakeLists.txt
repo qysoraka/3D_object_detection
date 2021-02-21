@@ -134,4 +134,5 @@ include_directories(
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
-## either from message generation or dynamic r
+## either from message generation or dynamic reconfigure
+# add_dependencies(${PROJECT_NA
