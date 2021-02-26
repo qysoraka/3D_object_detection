@@ -138,4 +138,5 @@ include_directories(
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-## With catkin_make all packages are built within a single CMake co
+## With catkin_make all packages are built within a single CMake context
+## The recommended prefix ensur
