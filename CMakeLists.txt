@@ -139,4 +139,5 @@ include_directories(
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
-## The recommended prefix ensures that target names across packages don
+## The recommended prefix ensures that target names across packages don't collide
+add_executable(object_filt
