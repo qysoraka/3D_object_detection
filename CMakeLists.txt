@@ -142,4 +142,5 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(object_filter src/object_filter.cpp)
 
-## Rename 
+## Rename C++ executable without prefix
+## The 
