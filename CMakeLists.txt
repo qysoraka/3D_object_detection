@@ -145,4 +145,5 @@ add_executable(object_filter src/object_filter.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
-## e.g. "rosrun someones_pkg node" instead of "rosrun someo
+## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
+# set_target_propert
