@@ -148,4 +148,4 @@ add_executable(object_filter src/object_filter.cpp)
 ## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
 # set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
 
-## Add c
+## Add cmake target dependencies of the e
