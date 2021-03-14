@@ -150,4 +150,4 @@ add_executable(object_filter src/object_filter.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(${PROJEC
+# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_T
