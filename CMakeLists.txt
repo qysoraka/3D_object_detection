@@ -149,4 +149,5 @@ add_executable(object_filter src/object_filter.cpp)
 # set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
 
 ## Add cmake target dependencies of the executable
-## same as for the library abo
+## same as for the library above
+# add_dependencies(${PROJEC
