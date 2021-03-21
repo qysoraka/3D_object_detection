@@ -159,4 +159,5 @@ target_link_libraries(object_filter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 ## Install ##
 #############
 
-# all install targets should
+# all install targets should use catkin DESTINATION variables
+# See
