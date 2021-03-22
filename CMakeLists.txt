@@ -160,4 +160,4 @@ target_link_libraries(object_filter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 #############
 
 # all install targets should use catkin DESTINATION variables
-# See
+# See http://ros.org/doc/api/catkin/html/adv_us
