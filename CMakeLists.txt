@@ -166,4 +166,4 @@ target_link_libraries(object_filter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 ## in contrast to setup.py, you can choose the destination
 # install(PROGRAMS
 #   scripts/my_python_script
-#   DESTINA
+#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINA
