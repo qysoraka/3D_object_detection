@@ -183,4 +183,6 @@ target_link_libraries(object_filter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 #   PATTERN ".svn" EXCLUDE
 # )
 
-## Mark other files for installation (e.g. l
+## Mark other files for installation (e.g. launch and bag files, etc.)
+# install(FILES
+#
