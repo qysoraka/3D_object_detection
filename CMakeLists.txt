@@ -187,4 +187,9 @@ target_link_libraries(object_filter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 # install(FILES
 #   # myfile1
 #   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATI
+#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+# )
+
+#############
+## Testing ##
+########
