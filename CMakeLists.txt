@@ -195,4 +195,5 @@ target_link_libraries(object_filter ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/te
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_opencv_object_tracking.cpp)
+# i
