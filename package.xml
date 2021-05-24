@@ -2,4 +2,6 @@
 <package format="2">
   <name>opencv_object_tracking</name>
   <version>0.0.0</version>
-  <description>The opencv_object_tracking packag
+  <description>The opencv_object_tracking package</description>
+
+  <!-- On
