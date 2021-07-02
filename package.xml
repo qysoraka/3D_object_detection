@@ -18,4 +18,5 @@
 
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
- 
+  <!-- Example: -->
+  <!-- <url type="website
