@@ -33,4 +33,5 @@
   <!-- Examples: -->
   <!-- Use depend as a shortcut for packages that are both build and exec dependencies -->
   <!--   <depend>roscpp</depend> -->
-  <!--   Note that this is equivalent to the following:
+  <!--   Note that this is equivalent to the following: -->
+  <!--   <build_depend>roscpp</b
