@@ -36,4 +36,5 @@
   <!--   Note that this is equivalent to the following: -->
   <!--   <build_depend>roscpp</build_depend> -->
   <!--   <exec_depend>roscpp</exec_depend> -->
-  <!-- Use build_depend for packages you need at
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>mes
