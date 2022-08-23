@@ -42,4 +42,5 @@
   <!--   <build_export_depend>message_generation</build_export_depend> -->
   <!-- Use buildtool_depend for build tool packages: -->
   <!--   <buildtool_depend>catkin</buildtool_depend> -->
-  <!-- Use exec_depend for 
+  <!-- Use exec_depend for packages you need at runtime: -->
+  <!--   <e
