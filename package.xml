@@ -43,4 +43,4 @@
   <!-- Use buildtool_depend for build tool packages: -->
   <!--   <buildtool_depend>catkin</buildtool_depend> -->
   <!-- Use exec_depend for packages you need at runtime: -->
-  <!--   <e
+  <!--   <exec_depend>message_runtime</exec_depend
