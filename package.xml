@@ -45,4 +45,5 @@
   <!-- Use exec_depend for packages you need at runtime: -->
   <!--   <exec_depend>message_runtime</exec_depend> -->
   <!-- Use test_depend for packages you need only for testing: -->
-  <!--   <tes
+  <!--   <test_depend>gtest</test_depend> -->
+  <!-
