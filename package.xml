@@ -57,4 +57,5 @@
   <build_depend>image_transport</build_depend>
   <build_export_depend>cv_bridge</build_export_depend>
   <build_export_depend>image_transport</build_export_depend>
-  <build_export_depen
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <bu
