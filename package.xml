@@ -59,4 +59,5 @@
   <build_export_depend>image_transport</build_export_depend>
   <build_export_depend>geometry_msgs</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
-  <build_export_depe
+  <build_export_depend>std_msgs</build_export_depend>
+  
