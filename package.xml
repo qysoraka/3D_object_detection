@@ -62,4 +62,4 @@
   <build_export_depend>std_msgs</build_export_depend>
   <build_export_depend>message_generation</build_export_depend>
   <exec_depend>cv_bridge</exec_depend>
-  <e
+  <exec_depend>image_transport</exec_depend
