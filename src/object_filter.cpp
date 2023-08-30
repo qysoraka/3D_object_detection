@@ -41,3 +41,37 @@ int V_MIN = 0;
 int V_MAX = 256;
 //Publishe new topic
 ros::Publisher *pub;
+const int FRAME_WIDTH = 640;
+const int FRAME_HEIGHT = 480;
+const int MAX_NUM_OBJECTS = 50;
+const int MIN_OBJECT_AREA = 20 * 20;
+const int MAX_OBJECT_AREA = FRAME_HEIGHT * FRAME_WIDTH / 1.5;
+
+static const std::string OPENCV_WINDOW = "Image Window";
+static const std::string windowName1 = "HSV image";
+static const std::string windowName2 = "Thresholded Image";
+static const std::string windowName3 = "After Morphological Operations";
+static const std::string trackbarWindowName = "Track bars";
+
+void on_trackbar(int, void*){}
+string intToString(int number)
+{
+        std::stringstream ss;
+        ss << number;
+        return ss.str();
+}
+void createTrackbars()
+{
+        //Create window for trackbars
+        namedWindow("Track_bars", 0);
+        char TrackbarName[50];
+        createTrackbar("H_MIN", "Track_bars", &H_MIN, H_MAX, on_trackbar);
+        createTrackbar("H_MAX", "Track_bars", &H_MAX, H_MAX, on_trackbar);
+        createTrackbar("S_MIN", "Track_bars", &S_MIN, S_MAX, on_trackbar);
+        createTrackbar("S_MAX", "Track_bars", &S_MAX, S_MAX, on_trackbar);
+        createTrackbar("V_MIN", "Track_bars", &V_MIN, V_MAX, on_trackbar);
+        createTrackbar("V_MAX", "Track_bars", &V_MAX, V_MAX, on_trackbar);
+}
+
+void drawObject(int x, int y, Mat &frame)
+{
