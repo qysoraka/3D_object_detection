@@ -75,3 +75,46 @@ void createTrackbars()
 
 void drawObject(int x, int y, Mat &frame)
 {
+        circle(frame, Point(x, y), 40, Scalar(0, 255, 0), 2); //50
+        if (y - 25 > 0)
+                line(frame, Point(x, y), Point(x, y - 25), Scalar(0, 255, 0), 2);
+        else line(frame, Point(x, y), Point(x, 0), Scalar(0, 255, 0), 2);
+        if (y + 25 < FRAME_HEIGHT)
+                line(frame, Point(x, y), Point(x, y + 25), Scalar(0, 255, 0), 2);
+        else line(frame, Point(x, y), Point(x, FRAME_HEIGHT), Scalar(0, 255, 0), 2);
+        if (x - 25 > 0)
+                line(frame, Point(x, y), Point(x - 25, y), Scalar(0, 255, 0), 2);
+        else line(frame, Point(x, y), Point(0, y), Scalar(0, 255, 0), 2);
+        if (x + 25 < FRAME_WIDTH)
+                line(frame, Point(x, y), Point(x + 25, y), Scalar(0, 255, 0), 2);
+        else line(frame, Point(x, y), Point(FRAME_WIDTH, y), Scalar(0, 255, 0), 2);
+
+        putText(frame, intToString(x) + "," + intToString(y), Point(x, y + 30), 1, 1, Scalar(0, 255, 0), 2);
+        ::posX = x;
+        ::posY = y;
+        putText(frame, "X_Y_Z coordinate", Point(20, 200), 1, 2, Scalar(0, 255, 0), 2);
+        putText(frame, "X = " + intToString(x_position) + "(mm)" , Point(20, 250), 1, 2, Scalar(0, 255, 0), 2);
+        putText(frame, "Y = " + intToString(y_position) + "(mm)" , Point(20, 300), 1, 2, Scalar(0, 255, 0), 2);
+        putText(frame, "Z = " + intToString(z_position) + "(mm)" , Point(20, 350), 1, 2, Scalar(0, 255, 0), 2);
+
+}
+void morphOps(Mat &thresh)
+{
+        Mat erodeElement = getStructuringElement(MORPH_RECT, Size(3, 3));
+        Mat dilateElement = getStructuringElement(MORPH_RECT, Size(8, 8));
+
+        erode(thresh, thresh, erodeElement);
+        erode(thresh, thresh, erodeElement);
+
+        dilate(thresh, thresh, dilateElement);
+        dilate(thresh, thresh, dilateElement);
+}
+void trackFilteredObject(int &x, int &y, Mat threshold, Mat &cameraFeed)
+{
+        Mat temp;
+        threshold.copyTo(temp);
+        //These two vectors needed for output of findContours
+        vector< vector<Point> > contours;
+        vector<Vec4i> hierarchy;
+        //Find contours of filtered image using openCV findContours function
+        findContours(temp, contours, hierarchy, CV_RETR_CCOMP, CV_CHAIN_APPROX_SIMPLE);
