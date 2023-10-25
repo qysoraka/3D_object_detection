@@ -153,3 +153,34 @@ void trackFilteredObject(int &x, int &y, Mat threshold, Mat &cameraFeed)
                         if (objectFound == true)
                         {
                                 //::flag = true;
+                                putText(cameraFeed, "Position Object tracking ", Point(0, 50), 2, 1, Scalar(0, 255, 0), 2);
+                                //draw object location on screen
+                                drawObject(x, y, cameraFeed);
+                        }
+
+                }
+                else putText(cameraFeed, "TOO MUCH NOISE! ADJUST FILTER", Point(0, 50), 1, 2, Scalar(0, 0, 255), 2);
+        }
+}
+
+void imageCallback(const sensor_msgs::ImageConstPtr& msg)
+{
+    cv_bridge::CvImagePtr cv_ptr;
+        try
+        {
+            cv_ptr = cv_bridge::toCvCopy (msg, sensor_msgs::image_encodings::BGR8);
+        }
+        catch (cv_bridge::Exception& e)
+        {
+            ROS_ERROR("cv_bridge exception: %s", e.what());
+            return;
+        }
+
+    bool trackObjects = true; //false
+	bool useMorphOps = true;  //false
+
+	Mat HSV;
+	Mat threshold;
+	int x = 0, y = 0;
+	createTrackbars();
+	std::cout << " The output of Object tracking by OpenCV!\n";
