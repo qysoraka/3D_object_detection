@@ -223,3 +223,38 @@ void getXYZ(int x, int y)
     p.x = X;
     p.y = Y;
     p.z = Z;
+    ::X_111 = X;
+    ::Y_111 = Y;
+    ::Z_111 = Z;
+    ::x_position = int(X*1000);
+    ::y_position = int(Y*1000);
+    ::z_position = int(Z*1000);
+
+    //printf("Position in X coordinate X = %.4f\n", X);
+    //printf("Position in Y coordinate Y = %.4f\n", Y);
+    //printf("Position in Z coordinate Z = %.4f\n", Z);
+
+    //return 0;
+}
+
+void depthcallback (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
+{
+    my_pcl = *cloud_msg;
+    getXYZ(posX , posY);
+}
+
+int main(int argc, char** argv)
+{
+
+
+    ros::init (argc, argv, "image_converter");
+    ros::NodeHandle nh;
+    image_transport::ImageTransport it(nh);
+    image_transport::Subscriber sub = it.subscribe("/camera/color/image_raw",1, imageCallback);
+    ros::Subscriber dep;
+    dep = nh.subscribe ("/camera/depth_registered/points", 1, depthcallback);
+
+    //Publish new topic.
+    ros::Publisher pub = nh.advertise<opencv_object_tracking::position_publish>("position_object", 1);
+    //Set the loop period with 0.1 second.
+    ros::Rate loop_rate(10);
