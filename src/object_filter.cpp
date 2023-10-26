@@ -184,3 +184,42 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 	int x = 0, y = 0;
 	createTrackbars();
 	std::cout << " The output of Object tracking by OpenCV!\n";
+
+    cvtColor(cv_ptr->image, HSV, COLOR_BGR2HSV);
+
+    inRange(HSV, Scalar(H_MIN, S_MIN, V_MIN), Scalar(H_MAX, S_MAX, V_MAX), threshold);
+
+    if (useMorphOps)
+        morphOps(threshold);
+
+    if (trackObjects)
+        trackFilteredObject(x, y, threshold, cv_ptr->image);
+    //show frames
+    imshow(windowName2, threshold);
+    //imshow(OPENCV_WINDOW, cameraFeed);
+    cv::imshow(OPENCV_WINDOW, cv_ptr->image);
+    //imshow(windowName1, HSV);
+    cv::waitKey(3);
+
+}
+
+void getXYZ(int x, int y)
+{
+    int arrayPosition = y*my_pcl.row_step + x*my_pcl.point_step;
+    int arrayPosX = arrayPosition + my_pcl.fields[0].offset; // X has an offset of 0
+    int arrayPosY = arrayPosition + my_pcl.fields[1].offset; // Y has an offset of 4
+    int arrayPosZ = arrayPosition + my_pcl.fields[2].offset; // Z has an offset of 8
+
+    float X = 0.0;
+    float Y = 0.0;
+    float Z = 0.0;
+
+    geometry_msgs::Point p;
+
+    memcpy(&X, &my_pcl.data[arrayPosX], sizeof(float));
+    memcpy(&Y, &my_pcl.data[arrayPosY], sizeof(float));
+    memcpy(&Z, &my_pcl.data[arrayPosZ], sizeof(float));
+
+    p.x = X;
+    p.y = Y;
+    p.z = Z;
