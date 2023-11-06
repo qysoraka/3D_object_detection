@@ -258,3 +258,45 @@ int main(int argc, char** argv)
     ros::Publisher pub = nh.advertise<opencv_object_tracking::position_publish>("position_object", 1);
     //Set the loop period with 0.1 second.
     ros::Rate loop_rate(10);
+
+    opencv_object_tracking::position_publish msg;
+    msg.counter = 0;
+
+    //int count = 0;
+    while ((ros::ok()))
+      {
+
+       //if ((posX != 0) && (posY != 0) && (flag == true))
+       //int count = 0;
+       if ((flag == true))
+       {
+       int posX_1, posY_1;
+       printf("Position in X coordinate X = %.4f\n", X_111);
+       printf("Position in Y coordinate Y = %.4f\n", Y_111);
+       printf("Position in Z coordinate Z = %.4f\n", Z_111);
+       //int count = 0;
+       posX_1 = posX;
+       posY_1 = posY;
+       msg.Position_XYZ.clear();
+       msg.center_pixel_x = posX;
+       msg.center_pixel_y = posY;
+       msg.counter = 1;
+
+       geometry_msgs::Point Position_XYZ;
+       Position_XYZ.x = X_111;
+       Position_XYZ.y = Y_111;
+       Position_XYZ.z = Z_111;
+       msg.Position_XYZ.push_back(Position_XYZ);
+
+       pub.publish(msg);
+       loop_rate.sleep();
+       //++count;
+       }
+
+       if (flag == false)
+       {
+        //count = 0;
+        msg.Position_XYZ.clear();
+        msg.center_pixel_x = 0;
+        msg.center_pixel_y = 0;
+        msg.counter = 0;
