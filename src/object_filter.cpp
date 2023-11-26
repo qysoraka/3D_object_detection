@@ -300,3 +300,21 @@ int main(int argc, char** argv)
         msg.center_pixel_x = 0;
         msg.center_pixel_y = 0;
         msg.counter = 0;
+
+        geometry_msgs::Point Position_XYZ;
+        Position_XYZ.x = 0;
+        Position_XYZ.y = 0;
+        Position_XYZ.z = 0;
+        msg.Position_XYZ.push_back(Position_XYZ);
+
+        pub.publish(msg);
+        loop_rate.sleep();
+       }
+
+      ros::spinOnce();
+      }
+
+
+    return 0;
+}
+
