@@ -6,4 +6,5 @@ For further inquiries or suggestions, please contact through the following email
 I'm eager to engage in discussions and further develop the project. Below is the process to use this code: 
 
  $ catkin_make 
- $ roslaunch reals
+ $ roslaunch realsense2_camera rs_rgbd.launch 
+ $ roslaunch
