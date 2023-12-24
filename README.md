@@ -7,4 +7,5 @@ I'm eager to engage in discussions and further develop the project. Below is the
 
  $ catkin_make 
  $ roslaunch realsense2_camera rs_rgbd.launch 
- $ roslaunch
+ $ roslaunch realsense2_camera rs_rgbd.launch 
+ $ r
