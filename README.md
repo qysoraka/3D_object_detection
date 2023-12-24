@@ -8,4 +8,4 @@ I'm eager to engage in discussions and further develop the project. Below is the
  $ catkin_make 
  $ roslaunch realsense2_camera rs_rgbd.launch 
  $ roslaunch realsense2_camera rs_rgbd.launch 
- $ r
+ $ rosrun opencv_object_tracking object_filter
